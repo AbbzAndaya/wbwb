@@ -13,6 +13,7 @@ public class Extender : MonoBehaviour
         
     }
 
+    Vector3 CustomForward = new Vector3(0, 0, 1);
     // Update is called once per frame
     void Update()
     {
@@ -20,14 +21,14 @@ public class Extender : MonoBehaviour
         {
             if (extender.localPosition.z < 10)
             {
-                extender.Translate(extender.forward * speed * Time.deltaTime);
+                extender.Translate(CustomForward * speed * Time.deltaTime);
             }
         }
         if (Input.GetKey(KeyCode.D))
         {
             if (extender.localPosition.z > -40)
             {
-                extender.Translate(-extender.forward * speed * Time.deltaTime);
+                extender.Translate(CustomForward * -speed * Time.deltaTime);
             }
         }
     }

@@ -8951,7 +8951,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   extender: {fileID: 1009028609}
-  speed: 1
+  speed: 2
 --- !u!1 &1011193502
 GameObject:
   m_ObjectHideFlags: 0
