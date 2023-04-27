@@ -17,14 +17,14 @@ public class Extender : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.W))
         {
             if (extender.localPosition.z < 10)
             {
                 extender.Translate(CustomForward * speed * Time.deltaTime);
             }
         }
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.S))
         {
             if (extender.localPosition.z > -40)
             {
